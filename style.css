@@ -1,0 +1,178 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url('/images/background.png');
+    background-size: cover;
+}
+
+.header {
+    background: #fdc830; /* fallback for old browsers */
+    background: rgb(253, 186, 26);
+    background: linear-gradient(90deg, rgba(253, 186, 26, 1) 0%, rgba(224, 46, 36, 1) 100%);
+    padding: 10px 0px 10px 20px;
+
+
+}
+
+.logo {
+    max-width: 100px; /* Set the maximum width of the logo image */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Coupon code */
+.coupon-code {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.coupon-code h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E13520;
+    text-align: center;
+}
+
+.coupon-code p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.coupon-code input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0px !important;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.coupon-code input:focus {
+    outline: none; /* Removes the default outline style */
+    border-bottom: 1px solid #000; /* Removes the border */
+}
+
+.coupon-code button {
+    width: 60%;
+    background-color: #FC0100;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+    border-radius: 50px;
+    margin-top:20px
+}
+.coupon-code label{
+    font-weight :100
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 4;
+}
+.red-asterisk {
+    color: red;
+}
+
+/* Make the form mobile-responsive */
+.coupon-code {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    margin: 0 auto;
+
+}
+/* Add this CSS in your style.css or in a <style> tag in your HTML */
+.footer {
+    background-color: #EC2029;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Raleway', sans-serif;
+
+}
+.footer-p{
+    margin: 0;
+    padding: 5px;
+}
+.error-message{
+    color: red;
+}
+.copy-code{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.copy-icon{
+    background: red !important;
+    color: white !important;
+    cursor: pointer;
+}
+.copy-input{
+    border: none !important;
+    background: white !important;
+}
+#snackbar {
+    visibility: hidden;
+    max-width: 150px;
+    margin-left: -75px;
+    background-color: rgba(77, 76, 76, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
